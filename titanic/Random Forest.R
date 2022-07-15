@@ -5,10 +5,7 @@ library('dplyr')
 library('mice')
 library('randomForest') 
 
-train <- read.csv("train.csv", stringsAsFactors = F)
-test  <- read.csv("test.csv", stringsAsFactors = F)
-
-full  <- bind_rows(train, test) # bind training & test data
+full  <- read.csv("train 2.csv", stringsAsFactors = F)
 
 str(full)
 
